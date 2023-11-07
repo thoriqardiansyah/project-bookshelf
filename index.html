@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf | Thoriq Ardiansyah</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="wrapper">
+        <h1>BookShelf Lite</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="form_input" class="form_input">
+        <h2>List Book</h2>
+        <form class="form" id="form">
+          <div class="form_group" id="form_group">
+            <label for="title" class="label">Title :</label>
+            <input
+              type="text"
+              id="title"
+              class="title input"
+              placeholder="What's name of book..."
+              required
+            />
+          </div>
+          <div class="form_group" id="form_group">
+            <label for="author" class="label">Author :</label>
+            <input
+              type="text"
+              id="author"
+              class="author input"
+              placeholder="Who's author..."
+              required
+            />
+          </div>
+          <div class="form_group" id="form_group">
+            <label for="year" class="label">Year :</label>
+            <input
+              type="number"
+              id="year"
+              class="year input"
+              placeholder="Exp: 2019"
+              required
+            />
+          </div>
+          <div class="form_group" id="form_group">
+            <label for="isComplete">Already finished read</label>
+            <input type="checkbox" id="isComplete" class="read" />
+          </div>
+
+          <input class="button" type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section id="search" class="search">
+        <h2>Search Book</h2>
+        <form class="searchBook">
+          <input
+            type="text"
+            id="searchBookTitle"
+            class="searchBookTitle"
+            placeholder="Search a book..."
+          />
+          <input
+            class="button"
+            id="buttonSearch"
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </section>
+
+      <section id="bookShelf" class="bookShelf">
+        <h2>Not Finished Reading</h2>
+        <div id="unFinishedRead" class="unFinishedRead"></div>
+      </section>
+
+      <section id="bookShelf" class="bookShelf">
+        <h2>Finished Reading</h2>
+        <div id="finishedRead" class="finishedRead"></div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+  margin-inline: auto;
+  max-width: 900px;
+  box-shadow: 5px 5px 0 #000;
+  border-bottom: 1px solid #000;
+  border-inline: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+header .wrapper h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-block: 2rem;
+  color: #000;
+}
+
+main {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+main .form_input {
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+main .form_input h2 {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+main .form_group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+main .form_group label::after {
+  content: "*";
+  color: red;
+  margin-left: 0.5rem;
+}
+
+main .form_group .input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-block: 1rem;
+  outline: none;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 0 #000;
+  border-radius: 5px;
+}
+
+main .form_group .read {
+  width: 20px;
+  height: 15px;
+  margin-block: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+main .form_group .input:hover,
+main .search .searchBook .searchBookTitle:hover {
+  box-shadow: 5px 5px 0 #f4fc02;
+}
+
+main .form_group .input:focus,
+main .search .searchBook .searchBookTitle:focus {
+  box-shadow: 5px 5px 0 #3cfc02;
+}
+
+main .form .button {
+  margin-block: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #000;
+}
+
+main .form .button:active,
+.search .searchBook .button:active {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+main .search h2,
+main .bookShelf h2 {
+  text-align: center;
+  margin: 2rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+main .search .searchBook {
+  display: flex;
+}
+
+main .search .searchBook .searchBookTitle {
+  flex: 3;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 0 #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+main .search .searchBook .button {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #000;
+}
+
+main .bookShelf {
+  margin-bottom: 5rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 #000;
+  margin-block: 2rem;
+}
+
+.card .inner h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 0.5rem;
+}
+
+.card .inner p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-block: 0.3rem;
+}
+
+.checked-btn {
+  background-image: url("../assets/checked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-image: url("../assets/edit.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-image: url("../assets/delete.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.undo-btn {
+  background-image: url("../assets/undo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 85%;
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 70%;
+    padding-inline: 2rem;
+  }
+}
